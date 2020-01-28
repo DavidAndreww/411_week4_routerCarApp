@@ -9,7 +9,7 @@ const Car = props => {
   let car = cars[id];
   console.log(car);
   return (
-    <Container fixed maxWidth="xsit ">
+    <Container fixed maxWidth="xs">
       <Paper elvation={3}>
         <h1>{car.Name}</h1>
         <Chip label={`id: ${car.id}`} />
