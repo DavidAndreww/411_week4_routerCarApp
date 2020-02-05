@@ -1,8 +1,6 @@
 import React from "react";
 import cars from "../cars.json";
-import { Chip } from "@material-ui/core/";
-import { Container } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
+import { Chip, Container, Paper } from "@material-ui/core/";
 
 const Car = props => {
   let id = props.match.params.id - 1;
@@ -21,7 +19,7 @@ const Car = props => {
         <Chip label={`Weight (lbs.): ${car.Weight_in_lbs}`} />
         <Chip label={`Acceleration: ${car.Acceleration}`} />
         <Chip label={`Year: ${car.Year}`} />
-        <Chip label={`Origin: ${car.Name}`} />
+        <Chip label={`Origin: ${car.Origin}`} />
       </Paper>
     </Container>
   );
